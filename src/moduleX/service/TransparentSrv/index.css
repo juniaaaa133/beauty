@@ -1,0 +1,64 @@
+.tss {
+display: flex;
+flex-direction: column;
+gap:40px;
+}
+.tss-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+.tss-ctn {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: space-between;
+    align-items: center;
+}
+.tssrv {
+    width: 100%;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.tss-img {
+    width:100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+.tss-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.tss-desc {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+@media (max-width: 990px) {
+    .tss-ctn {
+        grid-template-columns:45% 45%;       
+    }
+} 
+@media (max-width: 768px) {
+    .tss-ctn {
+        grid-template-columns:100%;  
+    }
+    .tssrv {
+        height: fit-content;
+    
+    }
+    .tss-img {
+        height: 400px;
+    }
+    .tss-desc {
+        padding:0 20px;
+        padding-bottom: 80px;
+        height: fit-content;
+    }
+
+} 

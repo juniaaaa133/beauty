@@ -1,0 +1,86 @@
+.tsnmain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 5;
+    top:0;
+    width:100%;
+}
+
+.tsn-nv-ctn  {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.tsn-logo {
+    font-size: 23px;
+}
+.tsns {
+    font-size: 15px;
+}
+.tsn-icn {
+    font-size: 20px;
+    font-weight: 800;
+    display: none;
+}
+.tsn-mbmain-cl {
+    transition: all;
+    transition-duration: .5s;
+    width: 100%;
+    height: fit-content;
+    padding: 40px 0;
+    position: absolute;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    display: none;
+
+}
+.tsn-mbmain {
+    transition: all;
+    transition-duration: .5s;
+    width: 100%;
+    height: fit-content;
+    padding: 40px 0;
+    position: absolute;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    display: none;
+
+}
+.tsncross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+@media (max-width: 990px) {
+    
+}
+
+@media (max-width: 768px) {
+    .tsnmain {
+      padding: 0 40px;
+    }
+    .tsn-icn {
+        display: block;
+    }
+    .tsn-mbmain {
+        display: flex;
+    }    
+    
+.tsn-nv-ctn  {
+display: none;
+}
+}
+
+@media (max-width: 440px) {
+    
+}

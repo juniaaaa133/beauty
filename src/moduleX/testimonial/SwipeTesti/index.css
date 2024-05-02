@@ -1,0 +1,149 @@
+.st-x {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.st-parent {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+.st-ctnx {
+    display: flex;
+    gap: 18px;
+    width:100%;
+    margin: 0 auto;
+    overflow: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.st-ra {
+    position: absolute;
+    right:0px;
+    /* bottom:0;
+    margin: auto;
+    top:0; */
+    height: 100%;
+    z-index: 3;
+    width:150px;
+    /* background-color: green; */
+}
+.st-ra-icn {
+    position:absolute;
+    top:0;
+    bottom:0;
+left:0;    /* background-color: black; */
+    margin:auto;
+    width:fit-content;
+    height: fit-content;
+    font-size: 20px;
+    padding:10px;
+    border-radius:50%;
+    border-width:2px;
+}
+.st-ra-icn:hover {
+    transform: rotate(360deg);
+}
+.st-la {
+    position: absolute;
+    left:0px;
+    /* top:0; */
+    height: 100%;
+    width:150px;
+    z-index: 3;
+    /* background-color: green; */
+}
+.st-la-icn {
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    /* background-color: black; */
+    margin:auto;
+    width:fit-content;
+    height: fit-content;
+    font-size: 20px;
+    padding:10px;
+    border-radius:50%;
+    border-width:2px;
+}
+.st-la-icn:hover {
+    transform: rotate(360deg);
+}
+.sts {
+    position: relative;
+    overflow: hidden;
+    min-width:350px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    height: 450px;
+    border-radius: 10px;
+    /* background-color: #ff0000; */
+    padding: 30px;
+    background-color: #ffffff;
+}
+.sts-layer {
+    top:-70%;
+    left: -50%;
+    right: -50%;
+    margin: auto;
+    position: absolute;
+    width:500px;
+    height: 500px;
+    border-radius: 40%;
+}
+.sts-info-ctn {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    padding: 0 30px;
+}
+.sts-pfp {
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left:0;
+    right:0;
+    margin: auto;
+}
+.sts-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+.sts-msg {
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .st-ra {
+        width:80px;
+    }
+
+    .st-la {
+        width:80px;
+    }
+}
+
+@media (max-width: 520px) {
+    .sts {
+        min-width:320px;
+    }
+    .st-ra {
+        width:50px;
+    }
+
+    .st-la {
+        width:50px;
+    }
+}
+@media (max-width: 480px) {
+    .sts {
+    min-width:100%;
+    }
+}

@@ -1,0 +1,34 @@
+.rc {
+    position: relative;
+    padding: 20px;
+    border-radius: 25px;;
+    overflow: hidden;
+    border : solid 2px #ec4384;
+}
+.rc-layer {
+transition: all;
+transition-duration: .5s;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.rc:hover .rc-layer {
+    left: -100%;
+}
+.rc:hover .rc-txt {
+    color : #ec4384;
+}
+
+.rc-txt {
+    position: absolute;
+    z-index: 2;
+    left:0;right:0;bottom:0;top:0;
+    margin: auto;
+    width:fit-content;
+    height: fit-content;
+    font-size: 15px;
+    transition: all;
+transition-duration: .5s;
+}

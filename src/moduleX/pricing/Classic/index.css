@@ -1,0 +1,98 @@
+.clspric {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.clspric-ctn {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+    align-items: center;
+}
+.clsprics {
+    width: 100%;
+    height: 560px;
+    flex-direction: column;
+    align-items: center;
+    gap:35px;
+    padding:30px 12px;
+    display: flex;
+    background-color: #f2f2f2;
+    position: relative;
+    text-align: center;
+}
+.clsprics:hover {
+    background-color: #ededf3;
+
+}
+.clsprics:hover .clspric-amo-ctn {
+opacity: 1;
+}
+.clsprics:hover  .clspric-cta-ctn{
+    opacity: 1;
+    }
+.clspric-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+.clspric-amo-ctn {
+    display: flex;
+    gap:5px;
+    opacity: .7
+}
+.clspric-sign {
+    font-size: 16px;
+}
+.clspric-amount {
+    font-size: 35px;
+}
+.clspric-info-ctn {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    align-items: center;
+    height: fit-content;
+    text-align: center;
+    margin-top: 10px;
+}
+.clspric-info {
+    font-size: 15px;
+}
+.clspric-cta-ctn {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    position: absolute;
+    bottom:30px;
+    right:0;
+    left:0;
+    margin: auto;
+    width:fit-content;
+    height: fit-content;
+    opacity: .7
+}
+.clspric-cta-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+.clspric-cta-ctn:hover {
+    gap:20px;
+}
+.clspric-icn {
+    
+}
+
+@media (max-width: 768px) {
+    .clspric-ctn {
+        grid-template-columns:430px;
+        justify-content: center;
+        gap:15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .clspric-ctn {
+        grid-template-columns:100%;
+    }
+}

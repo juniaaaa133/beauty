@@ -1,0 +1,16 @@
+.bbi-x  {
+border : inherit;
+outline: inherit;
+border-bottom: 1.5px solid #343434;
+padding: 5px 10px;
+background-color: inherit;
+}
+
+.bbta-x {
+    border : inherit;
+outline: inherit;
+border: 1.5px solid #343434;
+border-radius: 10px;
+padding: 5px 10px;
+background-color: inherit;
+}
